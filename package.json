@@ -2,15 +2,23 @@
   "name": "video-transcription-with-ia",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "main": "index.html",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "node server/index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "vite": "^5.0.12"
+    "axios": "^1.6.5",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "ffmpeg-static": "^5.2.0",
+    "fluent-ffmpeg": "^2.1.2",
+    "vite": "^5.0.12",
+    "ytdl-core": "^4.11.5"
   }
 }
